@@ -11,13 +11,14 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../assets/logo.png";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#000000] text-gray-300">
+    <div className="fixed z-10 w-full h-[80px] flex justify-between items-center px-4 bg-[#000000] text-gray-300">
       <div>
         <img src={Logo} alt="Logopicture" style={{ width: "50px" }} />
       </div>
@@ -68,6 +69,12 @@ const Navbar = () => {
           >
             Contact
           </Link>
+        </li>
+        <li>
+          <RouterLink to="/projects" smooth={true} duration={500}>
+            {" "}
+            Projects{" "}
+          </RouterLink>
         </li>
       </ul>
 

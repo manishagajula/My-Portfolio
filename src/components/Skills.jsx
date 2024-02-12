@@ -8,6 +8,10 @@ import Node from "../assets/node.png";
 // import FireBase from "../assets/firebase.png";
 import GitHub from "../assets/github.png";
 import Tailwind from "../assets/tailwind.png";
+import PostMan from "../assets/postman.png";
+import Redux from "../assets/redux.png";
+import Git from "../assets/git.png";
+import TypeScript from "../assets/typescript.png";
 // import Mongo from "../assets/mongo.png";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
 
@@ -56,7 +60,10 @@ import { Player, Controls } from "@lottiefiles/react-lottie-player";
 // https://lottie.host/55bfe6e9-d49b-4d9f-90fb-b63e124f498c/KB9Y4dAHKJ.json
 const Skills = () => {
   return (
-    <div name="skills" className="pt-2 pb-2 pl-28 bg-[#07080a] text-gray-300">
+    <div
+      name="skills"
+      className="pt-2 pb-2 pl-28 pr-28 bg-[#07080a] text-gray-300"
+    >
       {/* Container */}
       <div className="flex flex-row justify-start">
         {/* max-w-[1500px] */}
@@ -79,7 +86,7 @@ const Skills = () => {
             <p className="py-4">These are the technologies I've worked with</p>
           </div>
 
-          <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
+          <div className="w-full grid grid-cols-2 sm:grid-cols-5 gap-4 text-center py-8">
             <div className="shadow-md shadow-[#b3d0ed] hover:scale-110 duration-500 pr-8 pl-8">
               <img className="w-20 mx-auto" src={HTML} alt="HTML icon" />
               <p className="my-4">HTML</p>
@@ -97,7 +104,11 @@ const Skills = () => {
               <p className="my-4">REACT</p>
             </div>
             <div className="shadow-md shadow-[#b3d0ed] hover:scale-110 duration-500">
-              <img className="w-20 mx-auto" src={GitHub} alt="HTML icon" />
+              <img
+                className="w-20 mx-auto text-white"
+                src={GitHub}
+                alt="HTML icon"
+              />
               <p className="my-4">GITHUB</p>
             </div>
             <div className="shadow-md shadow-[#b3d0ed] hover:scale-110 duration-500">
@@ -111,6 +122,22 @@ const Skills = () => {
             <div className="shadow-md shadow-[#b3d0ed] hover:scale-110 duration-500">
               <img className="w-20 mx-auto" src={Tailwind} alt="HTML icon" />
               <p className="my-4">TAILWIND</p>
+            </div>
+            <div className="shadow-md shadow-[#b3d0ed] hover:scale-110 duration-500">
+              <img className="w-20 mx-auto" src={PostMan} alt="HTML icon" />
+              <p className="my-4">PostMan</p>
+            </div>
+            <div className="shadow-md shadow-[#b3d0ed] hover:scale-110 duration-500">
+              <img className="w-20 mx-auto" src={Redux} alt="HTML icon" />
+              <p className="my-4">Redux</p>
+            </div>
+            <div className="shadow-md shadow-[#b3d0ed] hover:scale-110 duration-500">
+              <img className="w-20 mx-auto" src={Git} alt="HTML icon" />
+              <p className="my-4">Git</p>
+            </div>
+            <div className="shadow-md shadow-[#b3d0ed] hover:scale-110 duration-500">
+              <img className="w-20 mx-auto" src={TypeScript} alt="HTML icon" />
+              <p className="my-4">Typescript</p>
             </div>
             {/* <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={FireBase} alt="HTML icon" />

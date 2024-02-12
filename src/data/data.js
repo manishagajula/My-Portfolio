@@ -37,7 +37,7 @@ export const data = [
     github: "https://github.com/manishagajula/Emoji-Interpreter",
     live: "o0qk58.codesandbox.io",
     description:
-      "Emoji Interpreter app built in online editor codesandbox wherein user can check the meaning of various emojis that are present in the database. Also it has its own Dictionary of Emoji's with meanings.",
+      "Emoji Interpreter app built in online editor codesandbox wherein user can check the meaning of various emojis that are present in the database.",
     TechStack: "ReactJs, Javascript, HTML, CSS",
   },
 
@@ -48,7 +48,8 @@ export const data = [
     github: "https://github.com/manishagajula/banana-speak-app",
     live: "minionlanguageapp.netlify.app",
     description:
-      "This is an fun app built with Vanilla Javascript and translation API. This translates normal text from English to Minions's Language. You can share this with your friends, family and enjoy.",
+      "A fun translation app built using Vanilla JS and translation API which converts the user entered English stext into banana language which is spoken by minions.",
+
     TechStack: "Javascript",
   },
   {

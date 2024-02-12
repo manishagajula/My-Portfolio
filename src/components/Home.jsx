@@ -44,7 +44,7 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="w-full 
+      className="w-full
       bg-[#07080a]"
     >
       {/*  */}
@@ -57,6 +57,7 @@ const Home = () => {
               <h1 className="text-indigo-50 text-4xl sm:text-7xl font-medium text-[#ccd6f6] font-sans pb-4">
                 Hey, I'm Manisha{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
+                {/* <span  sticky z-10"></span> */}
               </h1>
 
               {/* </div> */}
@@ -91,7 +92,14 @@ const Home = () => {
                 </span>
               </button>
               <button className="text-white group border-2 px-6 py-3 my-2 rounded flex items-center hover:bg-indigo-600 hover:border-indigo-600">
-                <a href="/"> Resume </a>
+                <a
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1MA2L77yhF_6k3pG5zWdKmUBhiQUbvvDw/view"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  Resume{" "}
+                </a>
               </button>
             </div>
           </div>
@@ -104,7 +112,7 @@ const Home = () => {
           src="https://lottie.host/911ff1b4-6736-4537-a3d0-eacd282e9960/vlDSV5uLo9.json
             "
           // style={{ height: "300px", width: "300px" }}
-          className="scale-50"
+          className="scale-50 sticky top-0 "
         />
         {/* </div> */}
       </div>

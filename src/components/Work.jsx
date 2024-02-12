@@ -1,20 +1,26 @@
 import React from "react";
 import { data } from "../data/data.js";
+import { useNavigate } from "react-router-dom";
 
 const Work = () => {
   // projects file
   const project = data;
   //setProject(data);
 
+  const navigate = useNavigate();
+  const handleSelectedbutton = () => {
+    navigate("/projects");
+  };
+
   return (
     <div
       name="work"
-      className="w-full h-full pt-1 pb-4  text-gray-300 bg-[#07080a]"
+      className="w-full h-full pt-1 pb-4 text-gray-300 bg-[#07080a]"
       id="my-work"
     >
       <div className="max-w-[1500px] flex flex-col justify-center h-full">
         <div className=" pl-20">
-          <p className=" text-4xl font-bold inline border-b-4 text-gray-300 border-indigo-600">
+          <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-indigo-600">
             Work
           </p>
           <p className="py-6">Check out some of my recent work</p>
@@ -52,7 +58,7 @@ const Work = () => {
                   </button>
                   <button className="bg-indigo-600 border-2 px-6 py-3 my-2 border-indigo-600 rounded-md hover:bg-indigo-700">
                     {" "}
-                    <a href={item.github} target="_blank">
+                    <a href={item.github} target="_blank" rel="noreferrer">
                       Github
                     </a>{" "}
                   </button>
@@ -60,6 +66,14 @@ const Work = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="w-full flex items-center justify-center">
+          <button
+            onClick={() => handleSelectedbutton()}
+            className="bg-indigo-600 max-w-max border-2 px-6 py-3 my-2 border-indigo-600 rounded-md hover:bg-indigo-700"
+          >
+            View More...
+          </button>
         </div>
       </div>
     </div>
