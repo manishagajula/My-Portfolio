@@ -94,7 +94,7 @@ const Home = () => {
               <button className="text-white group border-2 px-6 py-3 my-2 rounded flex items-center hover:bg-indigo-600 hover:border-indigo-600">
                 <a
                   target="_blank"
-                  href="https://drive.google.com/file/d/1MA2L77yhF_6k3pG5zWdKmUBhiQUbvvDw/view"
+                  href="https://drive.google.com/file/d/19YWeVN8kJGaxgNcDf_Dou10F6yOGiMcx/view?usp=sharing"
                   rel="noreferrer"
                 >
                   {" "}
